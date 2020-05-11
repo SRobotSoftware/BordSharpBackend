@@ -1,4 +1,4 @@
-﻿using API.Persistence.Contexts;
+using API.Persistence.Contexts;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;

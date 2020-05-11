@@ -19,7 +19,7 @@ namespace API.Persistence.Repositories
         }
         public async Task<Domain.Models.Task> FindByIdAsync(int id)
         {
-            return await _context.Tasks.Include(p => p.Board).Where(m => m.BoardId == id).FirstOrDefaultAsync();
+            return await _context.Tasks.Include(p => p.Board).Where(m => m.TaskId == id).FirstOrDefaultAsync();
         }
         public async Task<IEnumerable<Domain.Models.Task>> ListAsync()
         {
