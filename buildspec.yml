@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Restore started on `date`
+      - dotnet restore API/API.csproj
+  build:
+    commands:
+      - echo Build started on `date`
+      - dotnet publish -c release -o ./bin API/API.csproj
+artifacts:
+  files:
+    - API/bin/**/*
