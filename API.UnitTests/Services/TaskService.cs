@@ -47,7 +47,7 @@ namespace API.UnitTests
     public class TaskService_FindAsync
     {
         [TestMethod]
-        public async Task TaskService_FindAsync_InputValid_Should_ReturnTask()
+        public async Task TaskService_FindAsync_Should_ReturnTask()
         {
             var mockUnitOfWork = new Mock<IUnitOfWork>();
             var mockTaskRepository = new MockTaskRepository().MockFindByIdAsync(Task.FromResult(Generics.Task));

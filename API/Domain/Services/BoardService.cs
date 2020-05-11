@@ -71,7 +71,7 @@ namespace API.Domain.Services
 
             if (existingBoard == null)
             {
-                return new BoardResponse("Board not found");
+                return new BoardResponse("Board not found.");
             }
 
             try
